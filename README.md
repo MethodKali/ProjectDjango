@@ -44,3 +44,22 @@ _wsgi.py_ => Contém propriedades de configuração WSGI para o projeto python. 
 _manage.py_ => Utilitário que permite comque você interaja com o seu projeto Django de várias maneiras. Script responsável por todas as tarefas especificas do projeto
 
  
+## Adicione sua aplicação no script de configuração
+
+Para adicionar sua aplicação no script de configuração seguimos o passo a passo:
+
+* Abra o script settings.py em uma IDE
+* Na variavel lista _INSTALLED-APPS_ adicione o nome da sua aplicação seguindo o formato dos já inclusos
+* Salve o script
+
+## Faça a migração dos modelos pré existentes do Django
+
+Para fazermos as migrações utilizamos o seguinte comando no Terminal:
+
+	python3 manage.py migrate
+
+## Suba a aplicação Django para o servidor WEB
+
+Para subir uma aplicação Django usamos o seguinte comando:
+
+	python3 manage.py runserver
